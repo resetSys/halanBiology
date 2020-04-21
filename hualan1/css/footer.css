@@ -1,0 +1,17 @@
+.footer{
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: #0968ad;
+}
+
+.footer-img{
+  padding: 10px;
+  text-align: center;
+}
+.footer-text{
+  text-align: center;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 0.9rem;
+}

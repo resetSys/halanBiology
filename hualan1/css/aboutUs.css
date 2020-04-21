@@ -1,0 +1,56 @@
+html,body,#aboutUs{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	min-width: 1200px;
+}
+
+/* 背景大图 */
+.main-bg{
+  height: auto;
+  width: 100%;
+}
+.main-bg>img{
+  width: 100%;
+  height: auto;
+}
+/* 联系我们 */
+.contact-way{
+  width: 1200px;
+  height: 500px;
+  background-color: #ffffff;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tel{
+  width: 500px;
+  height: 100%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.tel-title{
+  font-size: 20px;
+  padding: 10px 0;
+}
+.tel-con{
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  line-height: 40px;
+}
+.tel-con>p{
+  color: #333333;
+}
+.tel-title>img{
+  height: 26px;
+  width: auto;
+  vertical-align: bottom;
+}
+.map{
+  width: 700px;
+  height: 100%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}

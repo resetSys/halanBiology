@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css单位测试</title>
+  <style>
+    /* 
+    需要用到的单位长度 
+    vw:屏幕视口的宽度，屏幕被均分为100vw
+    em:相对于浏览器中的默认字体尺寸
+    */
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .swiper{
+      width: 100vw;
+      height: auto;
+      overflow: hidden;
+    }
+    .swiper>ul{
+      width: 400vw;
+      height: auto;
+      list-style: none;
+      *zoom: 1;
+    }
+    .swiper>ul::after{
+      content: "";
+      display: inline-block;
+      width: 100%;
+      clear: both;
+    }
+    .swiper-item{
+      float: left;
+      width: 100vw;
+      height: auto;
+    }
+    .swiper-item>img{
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="swiper">
+    <ul class="swiper-list">
+      <li class="swiper-item">
+        <img src="./imgs/carousel/carousel1.png" alt="">
+      </li>
+      <li class="swiper-item">
+        <img src="./imgs/carousel/carousel2.png" alt="">
+      </li>
+      <li class="swiper-item">
+        <img src="./imgs/carousel/carousel3.png" alt="">
+      </li>
+      <li class="swiper-item">
+        <img src="./imgs/carousel/carousel1.png" alt="">
+      </li>
+    </ul>
+  </div>
+  <script>
+    //获取滚动容器
+    let swiperList = document.getElementsByClassName("swiper-list")[0]
+    //获取滚动项的个数
+    let swiperItems = document.getElementsByClassName("swiper-item").length
+    console.log(swiperItems)
+    let index = 1;
+    setInterval(() => {
+      console.log(index % swiperItems)
+      if (index % swiperItems == 0) {
+        swiperList.style.transitionProperty = "none";
+      } else {
+        swiperList.style.transitionProperty = "margin-left";
+        swiperList.style.transitionDuration = ".5s";
+      }
+      swiperList.style.marginLeft = -(index % swiperItems) * 100 +"vw";
+      index ++;
+    }, 3000);
+  </script>
+</body>
+</html>

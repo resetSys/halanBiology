@@ -1,0 +1,197 @@
+.main{
+  position: relative;
+  height: auto;
+  width: 100%;
+  min-width: 1260px;
+}
+.carousel{
+  width: 100%;
+  /* max-width: 1500px; */
+  width: 1260px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.carousel-group{
+  width: calc(100% * 4);
+  height: auto;
+  transition: margin-left .5s;
+}
+.carousel-item{
+  float: left;
+  height: auto;
+  /* min-width: 1260px; */
+  /* max-width: 1700px; */
+  width: 1260px;
+  
+}
+.carousel-item>img{
+  width: 100%;
+  height:auto;
+}
+/* div的宽度是屏幕的100%,ul的宽度是li的个数*div的宽度,li的宽度是屏幕的宽度 */
+.carousel-dots{
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  width: 100%;
+}
+.carousel-dots>span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.carousel-dots>span:first-of-type{
+  background-color: #0067b4;
+}
+/* 操作按钮 */
+.handle{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.handle>span{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.next{
+  float: right;
+  background: url(../imgs/carousel/next.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.pre{
+  background: url(../imgs/carousel/pre.png) no-repeat center;
+  background-size: 100% 100%;
+}
+/* 主要内容 */
+.content{
+  width: 1260px;
+  height:515px;
+  margin: 0 auto;
+}
+.content-left{
+  width: 60%;
+  display: inline-block;
+}
+.content-rigth{
+  float: right;
+  width: 40%;
+  height: 100%;
+  padding-left: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.recomm{
+  border: .5px solid #DCDFE6;
+  box-sizing: border-box;
+}
+.c-title{
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  background-color: var(--base-color);
+  color: #ffffff;
+}
+/* 公司介绍 */
+.re-content{
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.re-content>img{
+  height: 100%;
+  width: 50%;
+}
+.re-text{
+  float: right;
+  width: 50%;
+  height: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.re-text-title{
+  font-size: 20px;
+  color: var(--base-color);
+}
+.re-text-cont{
+  overflow: hidden;
+  text-indent: 30px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 23px;
+  font-size: 14px;
+}
+/* 文章 */
+.article{
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: .5px solid #DCDFE6;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.articel-cell{
+  display: inline-block;
+  width: 245px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.articel-cell>ul{
+  padding:0 5px;
+}
+.articel-cell>ul>li{
+  display: inline-block;
+  line-height: 28px;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* 股市信息 */
+.stock{
+  height: 267px;
+  width: 484px;
+  border: .5px solid #DCDFE6;
+  box-sizing: border-box;
+}
+.stock-msg{
+  height: 227px;
+  width: 100%;
+}
+.realTime{
+  display: inline-block;
+  height: 227px;
+  width: 150px;
+  line-height: 227px;
+  text-align: center;
+  font-size: 30px;
+}
+.stock-item{
+  float: right;
+  height: auto;
+  width: 330px;
+  line-height: 25px;
+  margin-top: 65px;
+}
+.highest{
+  color: #F56C6C;
+}
+.lowest{
+  color: #67C23A;
+}
